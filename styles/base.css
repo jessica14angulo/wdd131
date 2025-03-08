@@ -127,6 +127,9 @@ h3 {
     justify-self: center;
     padding: 0;
 }
+.card2 li {
+    padding: 5px;
+}
 #linkList {
     display: grid;
 }
