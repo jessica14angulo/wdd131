@@ -1,0 +1,97 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    margin: 0;
+}
+h1 {
+    padding: 10px;
+} 
+main h1 {
+    text-align: center;
+}
+header {
+    background-color: #cfdbd5;
+    display: grid;
+}
+nav {
+    align-content: center;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    display: none;
+    flex: 1 1 100%;
+    text-align: center;
+}
+.open a {
+    display: block;
+}
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "X";
+}
+li {
+    list-style-type: none;
+    padding: 0;
+  
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 20px;
+    color: black;
+}
+nav a:hover {
+    background-color: white;
+}
+main {
+    max-width: 800px;
+    justify-self: center;
+}
+#temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+}
+img {
+    width: fit-content;
+    max-width: 100%;
+}
+figure {
+    justify-items: center;
+    margin: 20px;
+}
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #cfdbd5;
+    text-align: center;
+    padding: 7px;
+    font-size: 17px;
+}

@@ -1,0 +1,34 @@
+@media screen and (min-width: 800px) {
+    #temples-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #menu {
+        display: none;
+    }
+    nav {
+        align-content: center;
+        display: block;
+
+    }
+    header {
+        grid-template-columns: 2fr 5fr;
+    }
+    li {
+        padding: 0;
+    }
+    ul {
+        margin: 0;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #temples-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
