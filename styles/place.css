@@ -5,13 +5,13 @@
 }
 * {
     font-family: 'Lato', sans-serif;
-
 }
-
+html {
+    max-width: 1600px;
+}
 body {
     margin: 0;
     max-width: 1600px;
-
 }
 h1 {
     text-align: center;
@@ -56,6 +56,9 @@ footer {
 }
 
 @media (min-width: 1000px) {
+    html {
+        justify-self: center;
+    }
     .weather-icon img {
         display: none;
     }
@@ -66,6 +69,9 @@ footer {
         width: 100%;
         max-width: 1600px;
     }
+    body {
+        position: relative;
+    }
     #data {
         color: black;
         background-color: var(--transparent-color);
@@ -75,12 +81,19 @@ footer {
     }
     #weather {
         position: absolute;
-        top: 450px;
+        top: 400px;
         right: 50px;
+        max-width: 200px;
         background-color: var(--transparent-color);
     }
     #info {
         display: block;
         padding: 0;
+    }
+}
+@media (min-width: 1400px) {
+    #weather {
+        top: 700px;
+        right: 100px;
     }
 }
