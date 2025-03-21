@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <meta name="description" content="Place Practice Page">
+    <meta name="author" content="Jessica Angulo">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>South Korea</h1>
+    </header>
+    <body>
+        <picture id="main-photo">
+            <source srcset="images/korea-large.webp" media="(min-width: 1000px)">
+            <img src="images/korean-small.webp" alt="Korea night photo">
+        </picture>
+        <div id="info">
+            <div id="data">
+            <h2>Data</h2>
+            <p><strong>Area: </strong>100,210 km²</p>
+            <p><strong>Population: </strong>51,667,029</p>
+            <p><strong>Capital: </strong>Seoul</p>
+            <p><strong>Language: </strong>Korean</p>
+            <p><strong>Currency: </strong>South Korean Won</p>
+            <p><strong>Time Zone: </strong>GMT+9</p>
+            <p><strong>Calling Code: </strong>+82</p>
+            <p><strong>Internet TLD: </strong>.kr</p>
+            </div>
+            <div id="weather">
+                <div id="weather-header">
+                    <h2>Weather</h2>
+                    <picture class="weather-icon">
+                        <img src="images/cloud_sun_icon.svg" alt="Sun with cloud" width="100" height="100">
+                    </picture>
+                </div>
+                <p><strong>Temperature: <span id="temperature"></span></strong>6.9 &deg;C</p>
+                <p><strong>Conditions: <span id="conditions"></span></strong>Mostly cloudy</p>
+                <p><strong>Wind: <span id="wind"></span></strong>10.44 Km/h</p>
+                <p><strong>Wind Chill: </strong><span id="wind-chill"></span>&deg;C</p>
+            </div>
+        </div>
+        
+    </body>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌐 Jessica Angulo 🌐 Bolivia </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
