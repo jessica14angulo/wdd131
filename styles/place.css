@@ -62,8 +62,14 @@ footer {
     .weather-icon img {
         display: none;
     }
-    .weather-icon::before {
-        content: "⛅";
+    #weather-emoji::after {
+        content: " ⛅";
+    }
+    h2 {
+        margin: 0;
+        padding: 1rem;
+        color: var(--transparent-color);
+        background-color: var(--primary-color);
     }
     #main-photo img{
         width: 100%;
