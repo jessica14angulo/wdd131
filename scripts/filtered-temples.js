@@ -22,7 +22,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    "images/temples/aba-nigeria-temple-lds-273999-wallpaper.webp"
   },
   {
     templeName: "Manti Utah",
@@ -30,7 +30,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    "images/temples/manti-temple-768192-wallpaper.webp"
   },
   {
     templeName: "Payson Utah",
@@ -38,7 +38,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "images/temples/payson-utah-temple-exterior-1416671-wallpaper.webp"
   },
   {
     templeName: "Yigo Guam",
@@ -46,7 +46,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    "images/temples/yigo_guam_temple_2.webp"
   },
   {
     templeName: "Washington D.C.",
@@ -54,7 +54,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    "images/temples/washington_dc_temple-exterior-2.webp"
   },
   {
     templeName: "Lima Perú",
@@ -62,7 +62,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    "images/temples/lima-peru-temple-evening-1075606-wallpaper.webp"
   },
   {
     templeName: "Mexico City Mexico",
@@ -70,15 +70,15 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "images/temples/mexico-city-temple-exterior-1518361-wallpaper.webp"
   },
   {
-    templeName: "Cochabamba Bolivia",
-    location: "Cochabamba, Bolivia",
-    dedicated: "2000, April, 30",
-    area: 35500,
+    templeName: "Anchorage Alaska",
+    location: "Anchorage, Alaska",
+    dedicated: "1999, January, 9-10",
+    area: 11937,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/e012ebb4075dc7976a314471fc0a3b3058e37c1a/full/1920%2C/0/default"
+    "images/temples/anchorage-temple-lds-253274-wallpaper.webp"
 	},
 	{
     templeName: "Seoul Korea",
@@ -86,7 +86,7 @@ const temples = [
     dedicated: "1985, December, 14-15",
     area: 28057,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg"
+    "images/temples/seoul-korea-temple-lds-424784-wallpaper.webp"
 	},
 	{
     templeName: "St. George Utah",
@@ -94,7 +94,7 @@ const temples = [
     dedicated: "1877, April, 6-8",
     area: 143969,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-lds-947136-wallpaper.jpg"
+    "images/temples/st-george-temple-lds-947136-wallpaper.webp"
   },
 ];
 
