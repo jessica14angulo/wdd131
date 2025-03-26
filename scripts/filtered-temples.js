@@ -86,7 +86,7 @@ const temples = [
     dedicated: "1985, December, 14-15",
     area: 28057,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/c85632672919c0424997855308294168fc7a226f/full/1920%2C/0/default"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg"
 	},
 	{
     templeName: "St. George Utah",
@@ -94,7 +94,7 @@ const temples = [
     dedicated: "1877, April, 6-8",
     area: 143969,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/e8b5e8acfbb15ac4c69db04d50894fe72861b6b8/full/1920%2C/0/default"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-lds-947136-wallpaper.jpg"
   },
 ];
 
