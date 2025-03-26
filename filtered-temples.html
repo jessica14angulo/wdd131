@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temples Album using HTML, CSS and JavaScript">
+    <meta name="author" content="Jessica Angulo">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="icon" href="images/temple-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="filterTemples('all')">Home</a></li>
+                <li><a href="#" onclick="filterTemples('old')">Old</a></li>
+                <li><a href="#" onclick="filterTemples('new')">New</a></li>
+                <li><a href="#" onclick="filterTemples('large')">Large</a></li>
+                <li><a href="#" onclick="filterTemples('small')">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="temples-grid">
+            
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌐 Jessica Angulo 🌐 Bolivia </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
