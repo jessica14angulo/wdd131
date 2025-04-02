@@ -1,0 +1,17 @@
+h1 {
+    background-color: #18518f;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+body {
+    max-width: 1300px;
+    justify-self: center;
+    font-family: "Roboto", sans-serif;
+}
+img {
+    display: block;
+    justify-self: center;
+    max-width: 1300px;
+}
