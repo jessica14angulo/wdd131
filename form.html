@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="review.html" method="get">
+        <label for="product">Product Name:</label>
+        <select name="product" id="product" required>
+            <option value="" disabled selected>Select a Product...</option>
+        </select>
+
+        <label for="rating">Overall Rating:</label>
+        <input type="radio" id="rating1" name="rating" value="1" required>
+        <label for="rating-1">&#9733;</label>
+        
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating-2">&#9733;&#9733;</label>
+        
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating-3">&#9733;&#9733;&#9733;</label>
+        
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating-4">&#9733;&#9733;&#9733;&#9733;</label>
+        
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating-5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+
+
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install_date" required>
+
+        <label>Which features did you find useful in the product? <i>(Check all that apply)</i></label>
+        <input type="checkbox" id="feature-1" name="features" value="Durability">
+        <label for="feature-1">Durability</label>
+        
+        <input type="checkbox" id="feature-2" name="features" value="Ease of Use">
+        <label for="feature-2">Ease of Use</label>
+        
+        <input type="checkbox" id="feature-3" name="features" value="Performance">
+        <label for="feature-3">Performance</label>
+
+        <input type="checkbox" id="feature-3" name="features" value="Design">
+        <label for="feature-3">Design</label>
+
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review" rows="6" cols="50"></textarea>
+        
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username">
+    
+        <input type="submit" value="Submit Review">
+    </form>
+</body>
+<footer>
+    <p>&copy;<span id="currentyear"></span> 🌐 Jessica Angulo 🌐 Bolivia </p>
+    <p id="lastModified"></p>
+</footer>
+</html>
