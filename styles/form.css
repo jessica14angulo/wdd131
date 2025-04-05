@@ -102,12 +102,12 @@ footer {
     color: #444;
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 @media (min-width: 768px) {
     body {
-        background-color: #ffffff;
+        background-color: #f5f5f5;
     }
 
     form {
