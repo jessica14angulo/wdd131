@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #e9edc9;
+    border-radius: 8px;
+}
+
+h1 {
+    background-color: #3a5a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+    justify-self: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.star-label,
+.feature-label {
+    margin-bottom: 2rem;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    margin-bottom: 1rem;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-left: 0.3rem;
+}
+
+.optional {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3a5a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #a3b18a;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #444;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    form {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem 3rem;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        padding: 1.5rem;
+    }
+
+    /* Two-column layout for product name and date */
+    .form-row {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-row>div {
+        flex: 1;
+    }
+
+    select,
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 1rem;
+    }
+
+    .rating {
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.1rem;
+        padding: 0.9rem;
+        max-width: 300px;
+        margin: 1.5rem auto 0;
+        display: block;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
