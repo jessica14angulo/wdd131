@@ -8,12 +8,16 @@
     <meta name="author" content="Jessica Angulo">
     <meta name="description" content="WDD 131 - Final Project Page - Tech Communities in Cochabamba">
     <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <h1><a href="index.html">Tech Communities Cochabamba</a></h1>
+        <button id="menu" aria-label="hamburger menu"></button>
         <nav>
-            <h1>Tech Communities Cochabamba</h1>
-            <ul>
+            <ul class="navigation">
                 <li><a href="communities.html">Communities</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -22,18 +26,24 @@
     </header>
     <main>
         <h2>Our Communities</h2>
-        <div class="comunities-grid">
+        <div class="communities-grid">
             <div class="gdg">
                 <h3>Google Developer Groups</h3>
                 <img src="images/logos/gdg.png" alt="GDG logo">
+                <p>A community of developers interested in Google's developer
+                technology.</p>
             </div>
             <div class="wtm">
                 <h3>Women Techmakers</h3>
                 <img src="images/logos/wtm.png" alt="WTM logo">
+                <p>Google's program providing visibility, community, and resources
+                for women in technology.</p>
             </div>
             <div class="pyLadies">
                 <h3>PyLadies</h3>
                 <img src="images/logos/pyladies.png" alt="PyLadies logo">
+                <p>A group focusing on helping more women become active
+                participants in the Python community.</p>
             </div>
         </div>
         <h2>Events</h2>
@@ -52,27 +62,31 @@
                 <p>Local informative meeting for Google I/O</p>
             </div>
         </div>
-        <h2>Upcoming</h2>
+        <h2>Upcoming Events</h2>
         <div class="upcoming">
             <div class="upcoming1">
                 <h3>Woman Game Jam Hackathon</h3>
                 <h4>Women Techmakers</h4>
                 <p><i>August 8-10, 2025</i></p>
                 <p>Develop you best game and impress the community!</p>
-                <button>Register</button>
+                <button onclick="window.open('https://www.facebook.com/womengamejam', '_blank')">Register</button>
             </div>
         </div>
-        <h2>Communities Gallery</h2>
-        <img src="images/gallery/gdg1.webp" alt="gdg members">
-        <img src="images/gallery/pyladies3.jpg" alt="pyladies leads">
-        <img src="images/gallery/wtm5.jpg" alt="wtm members">
+        <div class="communities-gallery">
+            <h2>Communities Gallery</h2>
+            <img src="images/gallery/gdg1.webp" alt="gdg members">
+            <img src="images/gallery/pyladies3.jpg" alt="pyladies leads">
+            <img src="images/gallery/wtm5.jpg" alt="wtm members">
+        </div>
     </main>
     <footer>
         <div class="contactUs">
+            <h2>Contact Us</h2>
             <p>Email: info@techcbba.org</p>
             <p>Location: Cochabamba, Bolivia</p>
         </div>
         <div class="followUs">
+            <h2>Follow Us</h2>
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="images/logos/facebook.png" alt="Facebook logo">
             </a>
@@ -85,7 +99,7 @@
         </div>
         <div class="copyright">
             <p>&#169;<span id="currentYear"></span> Tech Communities Cochabamba. All rights reserved.</p>
-            <a href="https://byui-cse.github.io/wdd131-ww-course/week06/project-description.html">https://byui-cse.github.io/wdd131-ww-course/week06/project-description.html</a>
+            <a href="https://byui-cse.github.io/wdd131-ww-course/week06/project-description.html" target="_blank">https://byui-cse.github.io/wdd131-ww-course/week06/project-description.html</a>
         </div>
     </footer>
 </body>

@@ -1,0 +1,154 @@
+:root {
+    --navbar-color: #18518F;
+    --footer-color: #1F2937;
+    --gdg-color: #2563eb;
+    --wtm-color: #9333EA;
+    --pyLadies-color: #CC26DC;
+    --footer-text: #9CA3AF;
+    --white-font: #ffffff;
+    --gray: #ccc;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+}
+header {
+    background-color: var(--navbar-color);
+}
+header h1 {
+    background-color: var(--navbar-color);
+    color: var(--white-font);
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+}
+header h1 a {
+    padding: 0;
+    font-size: 1.5rem;
+}
+.navigation a {
+    display: none;
+    flex: 1 1 100%;
+    text-align: center;
+}
+.open a {
+    display: block;
+}
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--white-font);
+}
+
+#menu.open::before {
+    content: "X";
+}
+li {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 20px;
+    color: var(--white-font);
+}
+main {
+    text-align: center;
+    justify-items: center;
+}
+.communities-grid {
+    display: grid;
+}
+.communities-grid div,
+.events-grid div,
+.upcoming div {
+    border: 1px solid var(--gray);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 1rem;
+    max-width: 500px;
+}
+.gdg h3 {
+    color: var(--gdg-color);
+}
+.wtm h3 {
+    color: var(--wtm-color);
+}
+.pyLadies h3 {
+    color: var(--pyLadies-color);
+}
+.communities-grid img {
+    width: 150px;
+}
+.events-grid {
+    display: grid;
+}
+.events-grid div,
+.upcoming div {
+    text-align: left;
+}
+
+.event1 h4 {
+    color: var(--pyLadies-color);
+}
+.event2 h4 {
+    color: var(--gdg-color);
+}
+.upcoming1 h4 {
+    color: var(--wtm-color);
+}
+.upcoming1 button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--wtm-color);
+    color: var(--white-font);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.upcoming1 button:hover {
+    box-shadow: 0 6px 10px var(--wtm-color);
+    transform: translateY(-2px);
+}
+.communities-gallery img {
+    width: 90%;
+    margin: 0.5rem;
+}
+
+footer {
+    justify-items: center;
+    text-align: center;
+    background-color: var(--footer-color);
+    color: var(--footer-text);
+    padding: 1rem;
+}
+footer a {
+    color: var(--footer-text);
+} 
+footer h2 {
+    font-weight: bold;
+    color: var(--white-font);
+}
+.followUs img {
+    width: 50px;
+}
