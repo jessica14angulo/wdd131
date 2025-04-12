@@ -13,14 +13,16 @@
 }
 body {
     margin: 0;
+    max-width: 3000px;
 }
 header {
     background-color: var(--navbar-color);
+    display: grid;
 }
 header h1 {
     background-color: var(--navbar-color);
     color: var(--white-font);
-    padding: 1rem;
+    padding: 2rem;
     margin: 0;
     font-size: 1.5rem;
     margin-right: 4rem;
@@ -28,6 +30,14 @@ header h1 {
 header h1 a {
     padding: 0;
     font-size: 1.5rem;
+}
+nav {
+    align-content: center;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .navigation a {
     display: none;
@@ -59,12 +69,10 @@ li {
     padding: 0;
     text-align: center;
 }
-
 ul {
     flex-wrap: wrap;
     padding: 0;
 }
-
 a {
     text-decoration: none;
     padding: 2rem;
@@ -72,8 +80,15 @@ a {
     color: var(--white-font);
 }
 main {
+    max-width: 2100px;
+}
+main,
+.index-page {
     text-align: center;
     justify-items: center;
+}
+.index-page h2 {
+    font-size: 2em;
 }
 .communities-grid {
     display: grid;
@@ -83,7 +98,7 @@ main {
 .upcoming div,
 .events-page .event1,
 .events-page .event2,
-.events-page .upcoming1 {
+.upcoming1 {
     border: 1px solid var(--gray);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 16px;
@@ -142,7 +157,8 @@ main {
 .communities-gallery img,
 .communities-page img,
 .events-page img,
-.gallery-page img {
+.gallery-page img,
+.upcoming1 img {
     width: 90%;
     margin: 0.5rem;
     max-width: 700px;
@@ -157,6 +173,7 @@ footer {
 }
 footer a {
     color: var(--footer-text);
+    padding: 1rem;
 } 
 footer h2 {
     font-weight: bold;
@@ -170,7 +187,8 @@ footer h2 {
 }
 /* Communities */
 .communities-page,
-.events-page {
+.events-page,
+.upcoming1 {
     padding: 1rem;
     font-size: 18px;
 }
@@ -188,6 +206,107 @@ footer h2 {
 .events-page div {
     margin: 2rem;
 }
-@media (min-width: 900px) {
+@media screen and (min-width: 1025px) {
+    body {
+        justify-self: center;
+    }
+    #menu {
+        display: none;
+    }
+    nav {
+        align-content: center;
+        display: block;
+    }
+    header {
+        grid-template-columns: 4fr 3fr;
+    }
+    li {
+        padding: 0;
+    }
+    ul {
+        margin: 0;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
     
+    .communities-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+    .communities-grid h1 {
+        grid-column: 1/4;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .index-page h2 {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .all-events-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: -webkit-fill-available;
+    }
+    .all-events-grid h2 {
+        grid-row: 1;
+
+    }
+    .all-events-grid h3:nth-of-type(1) {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .index-page h2 {
+        grid-column: 1 / 4;
+        text-align: left;
+    }
+    .events-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .events-page h2 {
+        grid-column: 1/3;
+    }
+
+    .communities-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .communities-gallery img {
+        max-width: 400px;
+    }
+
+    .gallery-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .gallery-page h2:nth-of-type(1) {
+        grid-column: 1/6;
+    }
+    .gallery-page h2:nth-of-type(2) {
+        grid-column: 1/6;
+        grid-row: 3;
+    }
+    .gallery-page h2:nth-of-type(3) {
+        grid-column: 1/6;
+        grid-row: 5;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .followUs {
+        grid-column: 3/4;
+    }
+    .copyright {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
 }
