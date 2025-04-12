@@ -4,7 +4,6 @@
     --gdg-color: #2563eb;
     --wtm-color: #9333EA;
     --pyLadies-color: #CC26DC;
-    --footer-text: #9CA3AF;
     --white-font: #ffffff;
     --gray: #ccc;
 }
@@ -169,11 +168,11 @@ footer {
     justify-items: center;
     text-align: center;
     background-color: var(--footer-color);
-    color: var(--footer-text);
+    color: var(--white-font);
     padding: 1rem;
 }
 footer a {
-    color: var(--footer-text);
+    color: var(--white-font);
     padding: 1rem;
 } 
 footer h2 {
